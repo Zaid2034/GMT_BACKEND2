@@ -11,7 +11,7 @@ dotenv.config ();
 
 const JWT_SECRET=process.env.JWT_SECRET
 
-app.use(cors())
+//app.use(cors())
 app.use(cors({
     origin:['https://zaid-gmt-frontend.vercel.app/'],
     methods:['POST','GET'],
