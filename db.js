@@ -4,7 +4,6 @@ const dotenv = require ('dotenv');
 dotenv.config ();
 
 const uri=process.env.MONGO_URL;
-console.log("uri is:",uri);
 mongoose
   .connect (
     process.env.MONGO_URL
