@@ -1,5 +1,4 @@
 const mongoose = require ('mongoose');
-const {password} = require ('pg/lib/defaults');
 const dotenv = require ('dotenv');
 dotenv.config ();
 

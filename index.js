@@ -6,7 +6,6 @@ const {User,TrackingToken}=require('./db')
 const jwt = require ('jsonwebtoken');
 const dotenv = require ('dotenv');
 const { authMiddleware } = require('./authMiddleware');
-const { ok } = require('assert');
 dotenv.config ();
 
 const JWT_SECRET=process.env.JWT_SECRET
