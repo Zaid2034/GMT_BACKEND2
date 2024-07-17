@@ -11,12 +11,12 @@ dotenv.config ();
 
 const JWT_SECRET=process.env.JWT_SECRET
 
-//app.use(cors())
-app.use(cors({
-    origin:['https://zaid-gmt-frontend.vercel.app/'],
-    methods:['POST','GET'],
-    credentials:true
-}));
+app.use(cors())
+// app.use(cors({
+//     origin:['https://zaid-gmt-frontend.vercel.app/'],
+//     methods:['POST','GET'],
+//     credentials:true
+// }));
 app.use(express.json())
 
 const signUpSchema = zod.object ({
